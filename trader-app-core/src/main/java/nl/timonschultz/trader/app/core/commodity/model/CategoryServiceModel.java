@@ -1,14 +1,14 @@
-package nl.timonschultz.trader.app.api.model.common;
+package nl.timonschultz.trader.app.core.commodity.model;
 
 import org.springframework.stereotype.Component;
 
 @Component
-public class CategoryModel {
+public class CategoryServiceModel {
 
     private Long id;
     private String name;
 
-    public CategoryModel(Long id, String name) {
+    public CategoryServiceModel(Long id, String name) {
         this.id = id;
         this.name = name;
     }

@@ -1,10 +1,10 @@
-package nl.timonschultz.trader.app.api.model.commodity;
+package nl.timonschultz.trader.app.core.common.model;
 
-import nl.timonschultz.trader.app.api.model.common.CategoryModel;
+import nl.timonschultz.trader.app.core.commodity.model.CategoryServiceModel;
 import org.springframework.stereotype.Component;
 
 @Component
-public class CommodityModel {
+public class CommodityServiceModel {
 
     private Long id;
     private String name;
@@ -19,22 +19,22 @@ public class CommodityModel {
     private int sellPriceUpperAverage;
     private boolean isNonMarketable;
     private Long edId;
-    private CategoryModel category;
+    private CategoryServiceModel category;
 
-    public CommodityModel(Long id,
-                          String name,
-                          Long categoryId,
-                          int averagePrice,
-                          int isRare,
-                          int maxBuyPrice,
-                          int maxSellPrice,
-                          int minBuyPrice,
-                          int minSellPrice,
-                          int buyPriceLowerAverage,
-                          int sellPriceUpperAverage,
-                          int isNonMarketable,
-                          Long edId,
-                          CategoryModel category) {
+    public CommodityServiceModel(Long id,
+                                 String name,
+                                 Long categoryId,
+                                 int averagePrice,
+                                 int isRare,
+                                 int maxBuyPrice,
+                                 int maxSellPrice,
+                                 int minBuyPrice,
+                                 int minSellPrice,
+                                 int buyPriceLowerAverage,
+                                 int sellPriceUpperAverage,
+                                 int isNonMarketable,
+                                 Long edId,
+                                 CategoryServiceModel category) {
 
         this.id = id;
         this.name = name;
